@@ -54,7 +54,8 @@
 // SPI input
 #define  MISO_on (PINC & _BV(0)) // PC0
 
-#define RF_POWER TX_POWER_80mW 
+#define RF_POWER TX_POWER_158mW 
+//TX_POWER_5mW  80 20 158
 
 // tune ppm input for "special" transmitters
 // #define SPEKTRUM // TAER, 1100-1900, AIL & RUD reversed
@@ -62,9 +63,9 @@
 // PPM stream settings
 #define CHANNELS 12 // number of channels in ppm stream, 12 ideally
 enum chan_order{
-    THROTTLE,
     AILERON,
     ELEVATOR,
+    THROTTLE,
     RUDDER,
     AUX1,  // (CH5)  led light, or 3 pos. rate on CX-10, H7, or inverted flight on H101
     AUX2,  // (CH6)  flip control
